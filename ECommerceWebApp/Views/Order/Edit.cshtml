@@ -1,0 +1,17 @@
+﻿@model Order
+
+<h2>Edit Order</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label>Customer Id:</label>
+        <input asp-for="CustomerId" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Total Amount:</label>
+        <input asp-for="TotalAmount" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>
+

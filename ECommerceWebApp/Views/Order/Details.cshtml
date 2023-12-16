@@ -1,0 +1,19 @@
+﻿@model Order
+
+<h2>Order Details</h2>
+
+<div>
+    <h4>Id: @Model.Id</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Customer Id:</dt>
+        <dd class="col-sm-10">@Model.CustomerId</dd>
+        <dt class="col-sm-2">Total Amount:</dt>
+        <dd class="col-sm-10">@Model.TotalAmount</dd>
+    </dl>
+</div>
+<p>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</p>
+
